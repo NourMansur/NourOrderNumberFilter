@@ -1,0 +1,19 @@
+{% block sw_string_filter %}
+<div class="sw-existence-filter">
+    <sw-base-filter
+        :title="filter.label"
+        :show-reset-button="!!value"
+        :active="active"
+        @filter-reset="resetFilter"
+    >
+        {% block string_filter_content %}
+        <sw-field
+            :value="value"
+            :placeholder="filter.placeholder"
+            @change="changeValue"
+        >
+        </sw-field>
+        {% endblock %}
+    </sw-base-filter>
+</div>
+{% endblock %}

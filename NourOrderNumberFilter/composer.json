@@ -1,0 +1,17 @@
+{
+  "name": "nour/order-number-filter",
+  "description": "Order Number Filter",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "NourOrderNumberFilter\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "NourOrderNumberFilter\\NourOrderNumberFilter",
+    "label": {
+      "en-GB": "Order Number Filter"
+    }
+  }
+}
